@@ -16,3 +16,156 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  max-width: 1440px;
+  padding: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.datetime {
+border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+
+}
+.datetime:hover {
+border-color: #000;
+}
+.datetime:active {
+border-color: #4e75ff;;
+}
+.datetime:disabled{
+border-color:#808080;
+color: #808080;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.btnTimer {
+border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+background: #4e75ff;
+border: none;
+
+font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+}
+.btnTimer:hover {
+background: #6c8cff;
+}
+.btnTimer:disabled {
+background: #cfcfcf;
+}
+.timer {
+    display: flex;
+      flex-direction: row;
+      gap:24px;
+      margin-top: 32px;
+}
+.value {
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.label{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    text-transform: uppercase;
+}
+
+.form {
+  width: 360px;
+   
+}
+.delay{
+display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+margin-bottom: 16px;
+
+
+}
+.delay input {
+  border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+.state{
+  border-radius: 4px;
+    stroke-width: 1px;
+    stroke: #808080;
+}
+fieldset{
+  display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 48px;
+margin-bottom: 24px;
+padding: 0 48px 8px 48px;
+}
+legend {
+  display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 48px;
+  
+}
+
+.btnSnackbar{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+      padding: 8px 16px;
+      width: 360px;
+      height: 40px;
+      background: #4e75ff;
+
+      font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+}
+.btnSnackbar:hover {
+  background: #6c8cff;
+}
